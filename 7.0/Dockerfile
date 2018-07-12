@@ -21,15 +21,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 	  fr.reactiva.label-docker.version=$DOL_VERSION
 
 ENV DOL_FQDN="" \
-	DOL_DBDRIVER="mysql" \
-	DOL_DBHOST="localhost" \
-	DOL_DBUSER="root" \
-	DOL_DBPASS="" \
-	DOL_DBPREFIX="llx_" \
-	DOL_DBDOLUSER="dolibarr" \
-	DOL_DBDOLPASS="dolibarr" \
-	DOL_ADMUSER="admin" \
-	DOL_ADMPASS="admin" \
+	DOL_HOST="" \
 	SSL_CERTFILE="" \
 	SSL_KEYFILE="" \
 	SSL_CHAINFILE="" \
