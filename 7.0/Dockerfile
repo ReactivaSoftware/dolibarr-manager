@@ -86,7 +86,17 @@ RUN apk update \
 	&& chmod 444 /dolibarr/documents/install.lock \
 	&& apk del tzdata \
 	&& rm -rf /var/cache/apk/* \
-	&& rm -rf /builddir
+	&& rm -rf /builddir \
+	&& mkdir /scripts
+
+ADD scripts/* /scripts/
+
+RUN chmod +x /scripts/* \
+	&& chown -R dolibarr:dolibarr /scripts
+
+WORKDIR /scripts
+
+USER dolibarr:dolibarr
 
 EXPOSE 80 443
 
