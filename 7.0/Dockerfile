@@ -89,7 +89,7 @@ RUN apk update \
 	&& rm -rf /builddir \
 	&& mkdir /scripts
 
-ADD scripts/* /scripts/
+ADD ../scripts/* /scripts/
 
 RUN chmod +x /scripts/* \
 	&& chown -R dolibarr:dolibarr /scripts
