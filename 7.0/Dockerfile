@@ -106,4 +106,4 @@ VOLUME /dolibarr/htdocs/custom \
 	   /var/logs/apache2/ \
 	   /certs
 
-CMD ["docker-entrypoint.sh"]
+CMD ["/scripts/docker-entrypoint.sh"]
