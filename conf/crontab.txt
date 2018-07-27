@@ -1,0 +1,2 @@
+# Activate dolibarr task every 5 minutes
+*/5 * * * * /var/www/html/scripts/cron_run_jobs.php 2QtA6Wr796Xo7rxuBD9iISj7Z1Q1Vtjt cron_admin > /var/www/html/documents/cron_run_jobs.php.log
